@@ -263,7 +263,7 @@
                       <alias>bigtable-emulator</alias>
                       <run>
                         <ports>
-                          <port>8080:8080</port>
+                          <port>8086:8080</port>
                         </ports>
                       </run>
                     </image>
@@ -310,7 +310,7 @@
                       <run>
                         <net>host</net>
                         <ports>
-                          <port>8080:8080</port>
+                          <port>8086:8080</port>
                         </ports>
                       </run>
                     </image>

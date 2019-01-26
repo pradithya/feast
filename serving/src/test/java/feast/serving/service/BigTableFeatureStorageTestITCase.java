@@ -55,7 +55,7 @@ public class BigTableFeatureStorageTestITCase {
   @Before
   public void setUp() throws Exception {
     Configuration config = BigtableConfiguration.configure("dummyProject", "dummyInstance");
-    config.set(BigtableOptionsFactory.BIGTABLE_EMULATOR_HOST_KEY, "localhost:8080");
+    config.set(BigtableOptionsFactory.BIGTABLE_EMULATOR_HOST_KEY, "localhost:8086");
     connection = BigtableConfiguration.connect(config);
     // ideally use bigtable emulator.
     bigTablePopulator = new BigTablePopulator(connection);
